@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form action="/" method="post">
+        <label for="videoURL">Video URL:</label>
+        <input type="text" id="videoURL" name="videoURL" required>
+        
+        <label for="downloadType">Download Type:</label>
+        <select id="downloadType" name="downloadType">
+            <option value="video">Video</option>
+            <option value="audio">Audio</option>
+        </select>
+        
+        <!-- Additional fields for file format and resolution can be dynamically shown based on the download type -->
+        
+        <button type="submit">Download</button>
+    </form>
+</body>
+</html>
